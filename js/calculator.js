@@ -61,10 +61,17 @@ function runC(){
 	document.case.result.value = "0"
 };
 
+function historyCButton() {
+	i = 0;
+	document.getElementById("history").innerHTML = '<i class="fa fa-refresh"></i> History has been cleaned!';
+	document.getElementById("resButton").innerHTML = '';
+}
+
 function editHistory(){
 		if (i == 0) {
 			document.getElementById("history").innerHTML = "";
 			document.getElementById("history").innerHTML = document.case.display.value + " = " + eval(document.case.display.value) + "<br>";
+			document.getElementById("resButton").innerHTML = '<br><br><a href="#" class="btn btn-danger resetBtn" onclick="historyCButton()">Reset History</a>';
 			i = 1;
 		} else {
 			document.getElementById("history").innerHTML += document.case.display.value + " = " + eval(document.case.display.value) + "<br>";
