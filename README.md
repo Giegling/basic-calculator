@@ -1,1 +1,1 @@
-## **Basic calculator using HTML + Bootstrap and Javascript
+**Basic calculator using HTML + Bootstrap and Javascript
