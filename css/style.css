@@ -21,6 +21,16 @@
   line-height: 42px;
 }
 
+h1 {
+  font-family: "Lobster", cursive;
+}
+
+p {
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .btn {
   width: 10%;
   height: 50px;

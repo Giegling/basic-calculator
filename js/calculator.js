@@ -1,3 +1,6 @@
+var equalHistory = [];
+var equalNumbers = [];
+
 function run1(){
 	document.case.display.value += "1"
 };
@@ -59,7 +62,12 @@ function runC(){
 	document.case.result.value = "0"
 };
 
+function editHistory(){
+		document.getElementById("history").innerHTML += document.case.display.value + " = " + eval(document.case.display.value) + "<br>";
+}
+
 function runEqual(){
-	var equal = eval(document.case.display.value)
+	var equal = eval(document.case.display.value);
 	document.case.result.value = equal;
+	editHistory();
 };
