@@ -1,5 +1,4 @@
-var equalHistory = [];
-var equalNumbers = [];
+var i = 0;
 
 function run1(){
 	document.case.display.value += "1"
@@ -63,7 +62,13 @@ function runC(){
 };
 
 function editHistory(){
-		document.getElementById("history").innerHTML += document.case.display.value + " = " + eval(document.case.display.value) + "<br>";
+		if (i == 0) {
+			document.getElementById("history").innerHTML = "";
+			document.getElementById("history").innerHTML = document.case.display.value + " = " + eval(document.case.display.value) + "<br>";
+			i = 1;
+		} else {
+			document.getElementById("history").innerHTML += document.case.display.value + " = " + eval(document.case.display.value) + "<br>";
+		}
 }
 
 function runEqual(){
