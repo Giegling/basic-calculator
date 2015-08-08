@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Calculator</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <script src="./js/calculator.js" type="text/javascript"></script>
+</head>
+<body>
+<form name="case">
+ <div class="container">
+
+      <div class="hero-unit" id="calculator-wrapper">
+
+        <div class="row-fluid">
+          <div class="span8">
+            <input name="display" id="display" value="" class="uneditable-input" readonly>
+          </div>
+          <div class="span1" style="text-align: center;">
+            <div class="visible-phone">
+              =
+            </div>
+            <div class="hidden-phone">
+              =
+            </div>
+          </div>
+          <div class="span3">
+            <input name="result" id="result" value="0" class="uneditable-input" readonly>
+          </div>
+        </div>
+
+      </div>
+
+    <div class="row-fluid text-center">
+      <div class="span12 well">
+          <div id="calc-board">
+            <div class="row-fluid">
+              <a href="#" class="btn" onclick="run1()">1</a>
+              <a href="#" class="btn" onclick="run2()">2</a>
+              <a href="#" class="btn" onclick="run3()">3</a>
+              <a href="#" class="btn" onclick="runPlus()">+</a>
+            </div>
+
+            <div class="row-fluid">
+              <a href="#" class="btn" onclick="run4()">4</a>
+              <a href="#" class="btn" onclick="run5()">5</a>
+              <a href="#" class="btn" onclick="run6()">6</a>
+              <a href="#" class="btn" onclick="runMinus()">-</a>
+            </div>
+
+            <div class="row-fluid">
+              <a href="#" class="btn" onclick="run7()">7</a>
+              <a href="#" class="btn" onclick="run8()">8</a>
+              <a href="#" class="btn" onclick="run9()">9</a>
+              <a href="#" class="btn" onclick="runDivide()">/</a>
+            </div>
+
+            <div class="row-fluid">
+              <a href="#" class="btn btn-danger" onclick="runC()">C</a>
+              <a href="#" class="btn" onclick="run0()">0</a>
+              <a href="#" class="btn btn-primary" onclick="runEqual()">=</a>
+              <a href="#" class="btn" onclick="runMultiply()">*</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</form>
+</body>
+</html>
